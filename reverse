@@ -1,0 +1,21 @@
+using System;
+
+namespace Reverse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter The word ");
+            string input = Console.ReadLine();
+            String[] r1 = input.Split();
+            Array.Reverse(r1);
+            string reversesentence = String.Join(" ", r1) ;
+            Console.WriteLine("Reversed sentence: " + reversesentence);
+
+
+
+
+        }
+    }
+}
