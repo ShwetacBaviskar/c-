@@ -1,0 +1,22 @@
+using System;
+
+namespace Sum
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Multiple Digits");
+            int multidigit = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            while (multidigit>0)
+            {
+                int digit = multidigit % 10;
+                sum += digit;
+                multidigit /= 10;
+               
+            }
+            Console.WriteLine("Sum of digits: " + sum);
+        }
+    }
+}
