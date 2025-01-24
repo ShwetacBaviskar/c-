@@ -1,25 +1,20 @@
 ﻿using System;
-using System.Collections;
 
-namespace arr2
+namespace Sum
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[,] arr1 = { { 1, 3, 5, 5 },{3,6,8,9} };
-            Console.WriteLine("Rank"+arr1.Rank);
-            ArrayList list = new ArrayList();
-            list.Add(2);
-            list.Add(5);
-            list.Add(6);
-            list.Add(8);
-            list.Add(9);
-            foreach(var i in list)
+            Console.WriteLine("Enter Multiple Digits");
+            String multidigit = Console.ReadLine();
+            int sum = 0;
+            foreach (char i in multidigit)
             {
-                Console.WriteLine("" + i);
-            }
+                sum += Convert.ToInt32(i.ToString());
 
+            }
+            Console.WriteLine(" Sum of all digits" + sum);
         }
     }
 }
