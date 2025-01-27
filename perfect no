@@ -1,0 +1,31 @@
+using System;
+
+namespace perfect_no
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the number");
+            int Num =Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            for(int i=1; i < Num; i++)
+            {
+                if (Num % i== 0)
+                {
+                    sum = sum + i;
+                }
+                
+            }
+            if (sum == Num)
+            {
+                Console.WriteLine(Num+"This number is perfect");
+            }
+            else
+            {
+                Console.WriteLine(Num+"This number is not perfect");
+            }
+        }
+
+    }
+}
